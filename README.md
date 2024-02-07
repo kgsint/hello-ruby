@@ -1,2 +1,2 @@
 # Hello Ruby 
-My personal journal for learning ruby.
+My personal journal for learning Ruby.
