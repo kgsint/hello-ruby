@@ -1,29 +1,47 @@
 puts "Hello, Ruby"
 # print "Hello, Ruby"
 
-## == Define variable and const
-#
-# ===
-#
-# var
+=begin
+Define variable and const
+=end
 string = "Some String"
 # const
 STRING = "Const String"
 # STRING = "Reassign" # cannot reassign | throw error
 
-# Function declaration
-#
-#
+=begin
+Function declarations
+=end
 def sum(a, b = 0)
   a + b
 end
 
 puts "The sum of 1 and 9 is: #{sum(1, 9)}"
 
-# Conditional and loops
-# =
-# =
-# ===
+# multiple arguments packed as array (like rest parameters in JS and PHP)
+def sumMultiple(*nums)
+  total = 0
+  # == block style
+  # nums.each do |num|
+  #   total += num
+  # end
+
+  # == inline style
+  nums.each { |num| total += num }
+
+  return total
+end
+
+puts "The sum of 1, 2, 3, and 4 is #{sumMultiple(1, 2, 3, 4)}"
+
+# alias function | method
+alias multiSum sumMultiple
+"invoke from alias function: #{multiSum(1, 2, 3, 4)}" # output => 10
+
+=begin
+Conditional and loops
+=end
+
 # if else
 if true
   puts "Some condition is true"
