@@ -71,7 +71,7 @@ arrayOne.union(arrayTwo) # output => ['a', 'b', 'c', 'd', 'e']
 
 =begin
 Intersection (&)
-creates *a new arra*y from two existing arrays containing only elements that are common to both arrays - duplicates are removed
+creates *a new array* from two existing arrays containing only elements that are common to both arrays - duplicates are removed
 =end
 
 arrayOne = ['a', 'b', 'c', 'd']
