@@ -49,6 +49,13 @@ else
   puts "Some condition is false"
 end
 
+# unless
+unless false
+  puts "Something's going on"
+else
+  puts "Whatever!"
+end
+
 # ternary
 age = 21
 puts age >= 18 ? 'adult' : 'non-adult'
@@ -65,13 +72,19 @@ while count < 3
   count += 1
 end
 
+count = 0
+# until
+until count > 3
+  puts "count = #{count} for until loop"
+  count += 1
+end
 # for in
 fruits = ['apple', 'mango', 'orange']
 for fruit in fruits
   puts "I like #{fruit} (for in)"
 end
 
-# similar to foreach
+# similar to foreach but object-oriented
 fruits.each do |fruit|
   puts "I like #{fruit} (each)"
 end
