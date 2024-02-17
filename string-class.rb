@@ -59,10 +59,33 @@ string[-6, 6] # output => "string"
 string.upcase! # output => "SOME STRING"
 string.downcase! # output => "some string"
 string.capitalize! # output => "Some String"
-puts string.swapcase # output => "sOME STRING"
+string.swapcase # output => "sOME STRING"
 
 # replace entire string with a new string
 'foo'.replace('bar') # output => "bar"
 
 # reverse
 'foo'.reverse # output => "oof"
+
+# Ways of declaring string
+myString = String.new("A string is a string")
+# puts myString
+
+stringOne = %&This is another "string"&
+# puts stringOne
+
+stringTwo = %[This is string two "!"]
+# puts stringTwo
+
+stringThree = %{This is string three}
+# puts stringThree
+
+stringFour = %(This is string four)
+# puts stringFour
+
+myHereDoc = <<DOC
+This is my heredoc text
+This is a new line
+    Thank You,
+DOC
+# puts myHereDoc
