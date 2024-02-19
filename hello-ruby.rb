@@ -84,6 +84,21 @@ for fruit in fruits
   puts "I like #{fruit} (for in)"
 end
 
+# for in with break case
+for j in 0..9
+  for i in 1..5
+    print i, " "
+    break if j === 3
+  end
+  puts "\n"
+end
+
+# upto method
+1.upto(10) do |i|
+  text = "#{i}" + (i > 1 ? " times" : " time")
+  puts "#{text} with upto method"
+end
+
 # similar to foreach but object-oriented
 fruits.each do |fruit|
   puts "I like #{fruit} (each)"
