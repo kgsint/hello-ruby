@@ -89,3 +89,13 @@ This is a new line
     Thank You,
 DOC
 # puts myHereDoc
+
+# split (string to array)
+stringToArray = "asdfghjkl".split('')
+# stringToArray = "asdfghjkl".split(//)
+stringToArray # output => ['a', 's', 'd', 'f', 'g', 'h',k 'j', 'k', 'l']
+anotherStringToArray = "Elephant in the Room".split(' ')
+anotherStringToArray # output => ["Elephant", "in", "the", "Room"]
+
+# join (array to string)
+["Elephant", "in", "the", "Room"].join(' ') # output => "Elephant in the Room"
